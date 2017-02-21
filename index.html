@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
+    <title>Leigh Stein - Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lekton:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" charset="utf-8">
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+
+  </head>
+  <body>
+    <div id="wrapper">
+
+    <!-- Header Info -->
+    <header class="lightlinks lighttext">
+
+      <div class="intro">
+        <h1 id="homelink"><a href="#">Leigh Stein</a><br></h1>
+        <h2>Portfolio</h2>
+      </div>
+
+
+        <!-- Main Menu -->
+        <div class="mobile-nav darken-bg">
+          <div class="menu-btn" id="menu-btn">
+	           <div></div>
+	            <span></span>
+	            <span></span>
+	            <span></span>
+            </div>
+
+          <div class="responsive-menu">
+            <ul>
+              <li><a href="#aboutme">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div id="shoutout">
+            <p>Making things pretty on the internet since 1997.</p>
+        </div>
+        <div class="social-media darken-bg smll-txt">
+          Social Media buttons
+        </div>
+      </header>
+
+      <div class="content">
+
+      <!-- About Me -->
+
+        <div id="aboutme" class="restrict-width flexbox">
+          <div class="col-1">
+            <img src="img/profile.jpg" class="img-fit img-rounding">
+          </div>
+
+          <div class="col-2">
+            <h1>About Me</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed mi hendrerit, ullamcorper leo quis, tempor turpis. Donec congue ligula massa, et consectetur enim accumsan non. Fusce fringilla justo nunc, eget rutrum libero iaculis sed. Proin diam risus, ornare in sollicitudin in, vehicula id tortor. Maecenas ut mi et tellus pellentesque placerat. Sed non urna at tortor lobortis porta. Nunc sed suscipit risus. Etiam vel purus aliquet, molestie dui at, facilisis mi. Mauris vulputate purus quis convallis auctor. Fusce at risus id tellus consectetur fringilla. Vestibulum non dui enim.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Portfolio -->
+        <div id="portfolio">
+          <div class="restrict-width">
+            <div class="imgplaceholder">Websites</div>
+            <div class="imgplaceholder">Logos</div>
+            <div class="imgplaceholder">Print</div>
+
+
+          </div>
+
+        </div>
+
+
+
+        <!-- resume -->
+        <div id="resume">
+        <div class="restrict-width">
+          <h2 class="center-underline">Skills And Experience</h2>
+
+          <div class="flexbox">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed mi hendrerit, ullamcorper leo quis, tempor turpis. Donec congue ligula massa, et consectetur enim accumsan non. Fusce fringilla justo nunc, eget rutrum libero</p>
+
+          <ul id="programs" class="bulleted">
+            <li>Photoshop</li>
+            <li>In Design</li>
+            <li>Corel Painter</li>
+            <li>Illustrator</li>
+          </ul>
+
+          <ul id="skills" class="bulleted">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Wordpress</li>
+          </ul>
+
+          <ul id="Education" class="bulleted">
+            <li>Bachelor's of Fine Art</li>
+            <li>Code Louisville Graduate</li>
+            <li>Etc</li>
+          </ul>
+        </div>
+
+
+        </div>
+        </div>
+
+
+      </div>
+
+      <footer>
+        Footer Stuff
+      </footer>
+    </div>
+
+
+
+    <script type="text/javascript">
+    	jQuery(function($){
+        	     $( '.menu-btn' ).click(function(){
+        	     $('.responsive-menu').toggleClass('expand')
+        	     })
+            })
+    </script>
+  </body>
+</html>

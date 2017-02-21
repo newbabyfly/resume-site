@@ -1,0 +1,319 @@
+/*---------- browser standard resets ----- */
+
+* {
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+/*----------- Global Styles---------------*/
+
+body {
+	font:1em/1.5em helvetica;
+	color:#000000;
+	background: #caced1;
+	}
+
+#wrapper {
+	width: 100%;
+	margin:0 auto;
+}
+
+.darken-bg {
+		background: rgba(13, 35, 33, 0.6);
+}
+
+.smll-txt {
+	font-size: .75em;
+}
+
+
+/*------------- Image styling --------------------- */
+
+.img-fit {
+	width:100%;
+}
+
+.img-rounding {
+	border-radius: 10%;
+}
+
+
+
+
+/*--- Link Styles ---*/
+
+a {
+	color: #950020;
+	font-weight:bold;
+}
+
+a:hover {
+	color: #c50730;
+}
+
+.lightlinks a {
+	color:#ccc;
+}
+
+.lightlinks a:hover {
+	color:#fc576d;
+}
+
+/*-------- List/P/Float styles ---------*/
+
+p {
+	margin-bottom: 20px;
+}
+
+.lighttext {
+	color:#ccc;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0 0 15px 0;
+}
+
+.bulleted {
+	list-style-type: circle;
+	margin-left:15px;
+}
+
+
+.floatright {
+	display:inline-block;
+	float:right;
+}
+
+.floatleft {
+	display:inline-block;
+	float: left;
+}
+
+.breakfloat {
+	clear:both;
+}
+
+/*------------ Heading Styles -----------------*/
+
+h1 {
+	font: 3em Lekton;
+	font-weight:700;
+}
+
+h2 {
+	font: 2em/1 Lekton;
+	font-weight:400;
+	margin-bottom:20px;
+}
+
+
+.center-underline {
+	text-align: center;
+	padding-bottom:15px;
+	border-bottom: 1px solid;
+}
+/*-------------- Header ----------------------*/
+
+header {
+	background:#ccc;
+	padding-top:35px;
+	margin: auto;
+	background: url("../img/header-bg.jpg") no-repeat top center;
+	background-size: cover;
+	text-align:center;
+}
+
+h1#homelink  {
+	text-decoration:none;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom:0;
+}
+
+header a {
+	text-decoration: none;
+}
+
+.social-media {
+	padding:10px 0;
+	height: 40px;
+	width:100%;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	text-align:right;
+	padding:10px;
+	z-index:0;
+}
+
+/*-------------- Main Nav ------------*/
+
+#mainnav {
+	background: rgba(13, 35, 33, 0.6);
+	padding:10px 0;
+
+}
+
+
+
+/*------------- Main Content ---------------*/
+
+
+
+
+/*--------------------- Portfolio ---------------------*/
+
+#portfolio {
+	text-align:center;
+	background: rgba(13, 35, 33, 100);
+}
+
+.imgplaceholder {
+	display:inline-block;
+	width:20%;
+	padding:5%;
+	margin:20px;
+	border:1px solid red;
+}
+
+
+
+/*--------------------- Resume Styles ---------------------*/
+
+#resume {
+	background-color:#881630;
+	color:#fff;
+	padding: 20px 0 20px 0;
+	text-align:left;
+}
+
+
+
+
+/*---------------- footer ----------------------*/
+
+footer {
+	width:100%;
+	padding:20px;
+	background:#222;
+	color: #999;
+	height:100px;
+}
+
+
+/*---------------- Mobile Styling ---------------------*/
+
+@media screen and (max-width: 460px) {
+
+.content {
+		padding:4%;
+	}
+
+	/*----------- Mobile Menu styles -----------*/
+	.mobile-nav {
+		position: fixed;
+		top:0;
+		left:0;
+		padding:10px;
+		width:100%;
+		z-index:99;
+	}
+
+	.menu-btn div {
+  	position: absolute;
+  	left: 100%;
+  	top: 0;
+  	padding-right: 8px;
+  	margin-top: -0.50em;
+  	line-height: 1.2;
+  	font-size: 18px;
+  	font-weight: 200;
+  	vertical-align: middle;
+  	z-index: 99;
+  }
+
+  .menu-btn span {
+  	display: block;
+  	width: 19px;
+  	height: 3px;
+  	margin: 4px 0;
+  	background:#fff;
+  	z-index: 99;
+  }
+
+  .responsive-menu{
+  	display: none;
+  }
+
+  .expand {
+  	display: block !important;
+  }
+
+	.social-media {
+		display:none;
+	}
+
+
+}
+
+
+/*--------------- Full Size Screens ------------*/
+
+@media screen and (min-width: 460px) and (max-width:760px) {
+
+	header {
+		padding:35px 0 15px 0;
+	}
+}
+
+
+/*--------------- Full Size Screens ------------*/
+
+@media screen and (min-width: 760px) {
+
+	header {
+		padding:95px 0 35px 0;
+	}
+
+
+ /*-- 	.mobile-nav {
+		display:none;
+	} --*/
+
+	.mobile-nav li {
+		display:inline-block;
+		margin-left:20px;
+		font-size: 1.5em;
+		padding: 10px;
+	}
+
+	.content {
+
+	}
+
+	.restrict-width {
+		width:90%;
+		max-width: 1000px;
+		margin: auto;
+		padding: 50px 0 50px 0;
+	}
+
+	.flexbox {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+
+	.col-1 {
+		width: 30%;
+	}
+
+	.col-2 {
+		width: 67%;
+	}
+
+}
