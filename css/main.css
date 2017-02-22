@@ -96,6 +96,13 @@ ul {
 	clear:both;
 }
 
+.flexbox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
 /*------------ Heading Styles -----------------*/
 
 h1 {
@@ -169,16 +176,54 @@ header a {
 #portfolio {
 	text-align:center;
 	background: rgba(13, 35, 33, 100);
+	padding-top:20px;
+	color:#fff;
+
 }
+
+#portfolio img {width:100%;}
 
 .imgplaceholder {
 	display:inline-block;
-	width:20%;
-	padding:5%;
-	margin:20px;
-	border:1px solid red;
+	width:25%;
+	height:150px;
+	margin: 2%;
+	border-radius: 5%;
 }
 
+.imgplaceholder a {
+	display:block;
+	width:100%;
+	position:relative;
+	top:50%;
+	margin: auto;
+	color:#fff;
+	font-size:1.2em;
+	font-weight: bold;
+	text-decoration:none;
+	background: rgba(13, 35, 33, .8);
+	padding:15px 0;
+}
+
+.imgplaceholder a:hover {
+
+}
+
+
+#web {
+	background-image: url("../img/cia-website.jpg");
+	background-size: cover;
+}
+
+#logo {
+	background-image: url("../img/bphoniex-logo.jpg");
+	background-size: cover;
+}
+
+#print {
+	background-image: url("../img/rosie-shirt.jpg");
+	background-size: cover;
+}
 
 
 /*--------------------- Resume Styles ---------------------*/
@@ -209,8 +254,11 @@ footer {
 @media screen and (max-width: 460px) {
 
 .content {
-		padding:4%;
 	}
+
+.restrict-width {
+	padding:4%;
+}
 
 	/*----------- Mobile Menu styles -----------*/
 	.mobile-nav {
@@ -256,16 +304,29 @@ footer {
 		display:none;
 	}
 
+		.col-1 {display: none;}
 
 }
 
 
-/*--------------- Full Size Screens ------------*/
+/*--------------- Tablets ------------*/
 
 @media screen and (min-width: 460px) and (max-width:760px) {
 
 	header {
 		padding:35px 0 15px 0;
+	}
+
+	.restrict-width {
+		padding:4%;
+	}
+
+	.col-1 {
+		width: 30%;
+	}
+
+	.col-2 {
+		width: 67%;
 	}
 }
 
@@ -301,12 +362,7 @@ footer {
 		padding: 50px 0 50px 0;
 	}
 
-	.flexbox {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
 
-	}
 
 	.col-1 {
 		width: 30%;
