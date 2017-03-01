@@ -37,7 +37,7 @@
               <li><a href="#aboutme">About</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#resume">Resume</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -55,9 +55,9 @@
 
       <!-- About Me -->
 
-        <div id="aboutme" class="restrict-width flexbox">
+        <section id="aboutme" class="restrict-width">
           <div class="col-1">
-            <img src="img/profile.jpg" class="img-fit img-rounding">
+            <img src="img/profile.jpg" class="img-rounding">
           </div>
 
           <div class="col-2">
@@ -65,11 +65,11 @@
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed mi hendrerit, ullamcorper leo quis, tempor turpis. Donec congue ligula massa, et consectetur enim accumsan non. Fusce fringilla justo nunc, eget rutrum libero iaculis sed. Proin diam risus, ornare in sollicitudin in, vehicula id tortor. Maecenas ut mi et tellus pellentesque placerat. Sed non urna at tortor lobortis porta. Nunc sed suscipit risus. Etiam vel purus aliquet, molestie dui at, facilisis mi. Mauris vulputate purus quis convallis auctor. Fusce at risus id tellus consectetur fringilla. Vestibulum non dui enim.
             </p>
           </div>
-        </div>
+        </section>
 
 
         <!-- Portfolio -->
-        <div id="portfolio">
+        <section id="portfolio" class="portfolio breakfloat">
           <div class="restrict-width">
             <h2 class="center-underline">Portfolio</h2>
             <div class="flexbox">
@@ -86,47 +86,68 @@
 
           </div>
 
-        </div>
+        </section>
 
 
 
         <!-- resume -->
-        <div id="resume">
-        <div class="restrict-width">
-          <h2 class="center-underline">Skills And Experience</h2>
+        <section id="resume" class="resume">
+          <div class="restrict-width">
+            <h2 class="center-underline">Skills And Experience</h2>
 
-          <div class="flexbox">
+            <div class="flexbox">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed mi hendrerit, ullamcorper leo quis, tempor turpis. Donec congue ligula massa, et consectetur enim accumsan non. Fusce fringilla justo nunc, eget rutrum libero</p>
+
+              <ul id="programs" class="bulleted">
+                <li>Photoshop</li>
+                <li>In Design</li>
+                <li>Corel Painter</li>
+                <li>Illustrator</li>
+              </ul>
+
+              <ul id="skills" class="bulleted">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Wordpress</li>
+              </ul>
+
+              <ul id="Education" class="bulleted">
+                <li>Bachelor's of Fine Art</li>
+                <li>Code Louisville Graduate</li>
+                <li>Etc</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!--   Contact -->
+        <section id="contact" class="contact restrict-width">
+            <h2>Contact Me</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed mi hendrerit, ullamcorper leo quis, tempor turpis. Donec congue ligula massa, et consectetur enim accumsan non. Fusce fringilla justo nunc, eget rutrum libero</p>
 
-          <ul id="programs" class="bulleted">
-            <li>Photoshop</li>
-            <li>In Design</li>
-            <li>Corel Painter</li>
-            <li>Illustrator</li>
-          </ul>
+            <form action="index.html" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="sender_name">
 
-          <ul id="skills" class="bulleted">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Wordpress</li>
-          </ul>
+              <label for="email">Email:</label>
+              <input type="email" id="mail" name="sender_email">
 
-          <ul id="Education" class="bulleted">
-            <li>Bachelor's of Fine Art</li>
-            <li>Code Louisville Graduate</li>
-            <li>Etc</li>
-          </ul>
-        </div>
+              <label for="message">Your Message:</label>
+              <textarea id="message" name="sender_message"></textarea>
 
+                <button type="submit">Send</button>
 
-        </div>
-        </div>
+            </form>
+        </section>
 
 
       </div>
 
       <footer>
-        Footer Stuff
+        <div class="restrict-width">
+          <a href="#">Back to Top</a>
+            &copy 2017 Leigh Stein
+        </div>
       </footer>
     </div>
 
