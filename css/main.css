@@ -192,7 +192,7 @@ header a {
 	height:150px;
 	border-radius: 5%;
 	flex-grow:1;
-	margin:0 10px 20px 10px;
+	margin:20px;
 
 }
 
@@ -276,13 +276,17 @@ button {
 
 /*---------------- Mobile Styling ---------------------*/
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 480px) {
 
 .content {
 	}
 
 .restrict-width {
 	padding:4%;
+}
+
+header {
+	padding-bottom: 15px;
 }
 
 	/*----------- Mobile Menu styles -----------*/
@@ -293,6 +297,7 @@ button {
 		padding:10px;
 		width:100%;
 		z-index:99;
+		background: rgba(13, 35, 33, .9);
 	}
 
 	.menu-btn div {
@@ -337,14 +342,21 @@ button {
 
 /*--------------- Tablets ------------*/
 
-@media screen and (min-width: 460px) and (max-width:760px) {
+@media screen and (min-width: 480px) and (max-width:760px) {
 
 	header {
-		padding:35px 0 15px 0;
+		padding:35px 0 25px 0;
 	}
 
 	.restrict-width {
 		padding:4%;
+	}
+
+	.mobile-nav li {
+		display:inline-block;
+		margin-left:20px;
+		font-size: 1.2em;
+		padding: 15px 5px 15px 5px;
 	}
 
 		.col-1 {display: none;}
