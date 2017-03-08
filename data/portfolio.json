@@ -1,0 +1,25 @@
+{
+  "Logos": [
+    {
+      "name": "Corn Island Archaeology",
+      "image": "cia-logo.jpg",
+      "path": "portfolio/logo/",
+    },
+    {
+      "name": "Blue Pheonix Properties",
+      "image": "bpheonix-logo.jpg",
+      "path": "portfolio/logo/",
+    },
+
+    {
+      "name": "Shirley's Girls",
+      "image": "shirleysgirls-logo.jpg",
+      "path": "portfolio/logo/",
+    },
+    {
+      "name": "Archaeology Day",
+      "image": "archday-logo.jpg",
+      "path": "portfolio/logo/",
+    },
+  ]
+},
