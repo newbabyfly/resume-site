@@ -10,7 +10,7 @@
 /*----------- Global Styles---------------*/
 
 body {
-	font:1em/1.5em helvetica;
+
 	color:#000000;
 	background: #caced1;
 	}
@@ -50,6 +50,11 @@ a {
 
 a:hover {
 	color: #c50730;
+	text-decoration:none;
+}
+
+.lightlinks {
+	color: #ccc;
 }
 
 .lightlinks a {
@@ -58,6 +63,7 @@ a:hover {
 
 .lightlinks a:hover {
 	color:#fc576d;
+	text-decoration:none;
 }
 
 /*-------- List/P/Float styles ---------*/
@@ -80,18 +86,6 @@ ul {
 	margin-left:15px;
 }
 
-/*---- May not need
-.floatright {
-	display:inline-block;
-	float:right;
-
-}
-
-.floatleft {
-	display:inline-block;
-	float: left;
-}
----*/
 
 .breakfloat {
 	clear:both;
@@ -115,10 +109,14 @@ h1 {
 
 h2 {
 	font: 2em/1 Lekton;
-	font-weight:400;
+	font-weight:700;
 	margin-bottom:20px;
 }
 
+h3 {
+	font: 1.5em/1 Lekton;
+	font-weight:700;
+}
 
 .center-underline {
 	text-align: center;
@@ -131,11 +129,13 @@ h2 {
 
 header {
 	background:#ccc;
-	padding-top:35px;
 	margin: auto;
 	background: url("../img/header-bg.jpg") no-repeat top center;
 	background-size: cover;
 	text-align:center;
+	border-top:35px;
+	border-style: solid;
+	border-color: rgba(13, 35, 33, 1);
 }
 
 h1#homelink  {
@@ -153,19 +153,31 @@ header a {
 	padding:10px 0;
 	height: 50px;
 	width:100%;
-	position: absolute;
-	top:0;
-	bottom: 0;
 	text-align:right;
 	padding:10px;
 	z-index:0;
 }
 
+
 .social-links li {
 	width:30px;
+	height:40px;
 	display:inline;
 	float:right;
 	margin-right: 20px;
+}
+
+li.socialtag {
+	font-weight:bold;
+	font-size: 1.3rem;
+	width:100px;
+	height:35px;
+	margin-right:20px;
+	padding:10px;
+	background: #222;
+	color:#ccc;
+	border-radius:10px;
+
 }
 
 /*-------------- Main Nav ------------*/
@@ -175,12 +187,6 @@ header a {
 	padding:10px 0;
 
 }
-
-/*--------------------- About Me ---------------------*/
-
-
-
-
 
 
 /*--------------------- Portfolio ---------------------*/
@@ -194,60 +200,82 @@ header a {
 #portfolio img {width:100%;}
 
 .imgplaceholder {
-	min-width:200px;
-	height:150px;
-	border-radius: 10%;
+	height:250px;
 	flex-grow:1;
 	margin:20px;
-
 }
 
-.imgplaceholder a {
+.slideshow a {
 	display:block;
-	position:relative;
-	top:50%;
+	position:absolute;
+	bottom:0;
+	width:100%;
 	color:#fff;
 	font-size:1.2em;
 	font-weight: bold;
 	text-decoration:none;
 	text-align:center;
-	background: rgba(13, 35, 33, .8);
+	background: rgba(13, 35, 33, .9);
 	padding:15px;
 }
 
-.imgplaceholder a:hover {
+.slideshow a:hover {
+}
 
+.carousel {
+	margin:0;
+	padding:0;
+	border-radius:20px;
+}
+
+.carousel-inner {
+		border-radius:20px;
+		height:400px;
 }
 
 
 #web {
-	background-image: url("../portfolio/web/cia-website.jpg");
+	background-image: url("../portfolio/cia-website.jpg");
 	background-size: cover;
-	background-position: center;
+	height:400px;
 }
 
 #logo {
-	background-image: url("../portfolio/logos/bphoniex-logo.jpg");
+	background-image: url("../portfolio/bphoniex-logo.jpg");
 	background-size: cover;
 	background-position: center;
+	height:400px;
 }
 
 #print {
-	background-image: url("../portfolio/print/rosie-shirt.jpg");
+	background-image: url("../portfolio/rosie-shirt.jpg");
 	background-size: cover;
 	background-position: center;
+	height:400px;
 }
 
 /*----------------- Portfolio Gallery -----------------*/
 
 .gallery li {
-	width: 25%;
+	width:25%;
+	height:120px;
 	padding:10px;
 	display:inline;
 	float:left;
+	margin:0 0 20px 0;
 }
+
 .gallery li img {
 	border-radius: 10%;
+	width:100%;
+	height:120px;
+
+}
+
+.cover {
+  object-fit: cover;
+  width: 50px;
+  height: 100px;
 }
 
 .gallery {
@@ -377,6 +405,7 @@ header {
   	display: block !important;
   }
 
+/*----- Extra Mobile Fixes -----------*/
 	.social-media {
 		display:none;
 	}
@@ -416,7 +445,7 @@ header {
 @media screen and (min-width: 760px) {
 
 	header {
-		padding:95px 0 35px 0;
+		padding:75px 0 35px 0;
 	}
 
 
@@ -441,37 +470,38 @@ header {
 
 /* ------ About Me ---------*/
 
-	#aboutme {
-		/* display:inline-block; I hate you */
-	}
+
 
 	.col-1 {
 		display:inline-block;
 		float:left;
 		width:28%;
-		margin:0 40px 40px 0;
-	}
+		margin-right:40px;
 
-	.col-2 {
 	}
 
 	/*------------- SubPage header Style ------------*/
 
-	.subpage header {
-		display:inline-block;
-		float:left;
-		width:18%;
-		height:100vh;
-		margin-right: 4%;
+ .subpage header {
+	 height:200px;
 	}
 
-	.subpage #homelink {
-		font-size:1.8rem;
+	.subpage .content {
+		background: rgba(13, 35, 33, 1)
+	}
 
+	.subpage footer {
+		background: #881630;
 	}
 
 	.subpage .responsive-menu {
-		display:none;
+		position: absolute;
+		top:0;
+		right:0;
+		width:100%;
+		height: 45px;
+		text-align:right;
+		background: rgba(13, 35, 33, 1)
 	}
 
 }

@@ -4,11 +4,9 @@
     <meta name="viewport" content="width=device-width" />
     <meta charset="UTF-8" />
     <title>Leigh Stein - Portfolio</title>
-
     <link href="https://fonts.googleapis.com/css?family=Lekton:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" charset="utf-8">
-
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 
   </head>
   <body>
@@ -16,50 +14,68 @@
 
     <!-- Header Info -->
     <header class="lightlinks lighttext">
-
       <div class="intro">
         <h1 id="homelink"><a href="index.html">Leigh Stein</a><br></h1>
-        <h2>Portfolio</h2>
       </div>
 
-
-        <!-- Main Menu -->
-        <div class="mobile-nav darken-bg">
-          <div class="menu-btn" id="menu-btn">
-	           <div></div>
-	            <span></span>
-	            <span></span>
-	            <span></span>
-            </div>
-
-          <div class="responsive-menu">
-            <ul>
-              <li><a href="#aboutme">About</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#resume">Resume</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
+    <!-- Main Menu -->
+      <div class="mobile-nav darken-bg">
+        <div class="menu-btn" id="menu-btn">
+           <div></div>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
-
-        <div id="shoutout">
-            <p>Making things pretty on the internet since 1997.</p>
-        </div>
-        <div class="social-media darken-bg smll-txt">
-          <ul class="social-links">
-              <li><a href="#"><img src="img/linkedin.png" alt=""></a></li>
-              <li><a href="#"><img src="img/github.png" alt=""></a></li>
+        <div class="responsive-menu">
+          <ul>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-
         </div>
+      </div>
+
+      <h3>Making things pretty on the internet since 1997.</h3>
       </header>
 
-      <div class="content">
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="portfolio breakfloat hidden-xs">
+        <div class="restrict-width">
+          <div id="myCarousel" class="carousel slide jumbotron">
+            <div class="slideshow">
+
+                <div class="carousel-inner">
+                  <div class="item active" id="web">
+                    <a href="portfolio.html#">Web</a>
+                  </div>
+
+                  <div class="item" id="logo">
+                      <a href="portfolio.html#">Logos</a>
+                  </div>
+
+                  <div class="item" id="print">
+                    <a href="portfolio.html#">Print</a>
+                  </div>
+
+              </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
+          </div>
+        </div>
+      </section>
 
       <!-- About Me -->
 
-        <section id="aboutme" class="restrict-width">
+      <section id="aboutme">
+        <div class="restrict-width">
           <div class="col-1">
             <img src="img/profile.jpg" class="img-rounding">
           </div>
@@ -68,84 +84,86 @@
             <h1>About Me</h1>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed mi hendrerit, ullamcorper leo quis, tempor turpis. Donec congue ligula massa, et consectetur enim accumsan non. Fusce fringilla justo nunc, eget rutrum libero iaculis sed. Proin diam risus, ornare in sollicitudin in, vehicula id tortor. Maecenas ut mi et tellus pellentesque placerat. Sed non urna at tortor lobortis porta. Nunc sed suscipit risus. Etiam vel purus aliquet, molestie dui at, facilisis mi. Mauris vulputate purus quis convallis auctor. Fusce at risus id tellus consectetur fringilla. Vestibulum non dui enim.
             </p>
-          </div>
-        </section>
 
-
-        <!-- Portfolio -->
-        <section id="portfolio" class="portfolio breakfloat">
-          <div class="restrict-width">
-            <h2 class="center-underline">Portfolio</h2>
-            <div class="flexbox">
-            <div id="web" class="imgplaceholder">
-                <a href="#">Web</a>
+            <div class="social-media smll-txt">
+              <ul class="social-links">
+                <li><a href="#"><img src="img/linkedin.png" alt=""></a></li>
+                <li><a href="#"><img src="img/github.png" alt=""></a></li>
+                <li class="socialtag">Find me on:</strong></li>
+              </ul>
             </div>
-            <div id="logo" class="imgplaceholder">
-                <a href="logos.html">Logos</a>
-            </div>
-            <div id="print" class="imgplaceholder">
-                <a href="#">Print</a>
-            </div>
-          </div>
 
           </div>
-
-        </section>
-
-
+        </div>
+      </section>
 
         <!-- resume -->
-        <section id="resume" class="resume">
-          <div class="restrict-width">
-            <h2 class="center-underline">Skills And Experience</h2>
+      <section id="resume" class="resume">
+        <div class="restrict-width breakfloat">
+          <h2 class="center-underline">Skills And Experience</h2>
 
-            <div class="flexbox">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed mi hendrerit, ullamcorper leo quis, tempor turpis. Donec congue ligula massa, et consectetur enim accumsan non. Fusce fringilla justo nunc, eget rutrum libero</p>
-
-              <ul id="programs" class="bulleted">
-                <li>Photoshop</li>
-                <li>In Design</li>
-                <li>Corel Painter</li>
-                <li>Illustrator</li>
-              </ul>
-
-              <ul id="skills" class="bulleted">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Wordpress</li>
-              </ul>
-
-              <ul id="Education" class="bulleted">
-                <li>Bachelor's of Fine Art</li>
-                <li>Code Louisville Graduate</li>
-                <li>Etc</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <!--   Contact -->
-        <section id="contact" class="contact restrict-width">
-            <h2>Contact Me</h2>
+          <div class="row">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed mi hendrerit, ullamcorper leo quis, tempor turpis. Donec congue ligula massa, et consectetur enim accumsan non. Fusce fringilla justo nunc, eget rutrum libero</p>
 
+            <div class="col-sm-4">
+              <h3><span class="glyphicon glyphicon-star"></span> I Rock At:</h3>
+                <ul id="programs" class="bulleted">
+                  <li>Photoshop</li>
+                  <li>In Design</li>
+                  <li>Corel Painter</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Wordpress</li>
+                </ul>
+              </div>
+
+              <div class="col-sm-4">
+                <h3><span class="glyphicon glyphicon-star-empty"></span> I'm Learning</h3>
+                <ul id="skills" class="bulleted">
+                  <li>Illustrator</li>
+                  <li>Javascript</li>
+                  <li>Bootstrap</li>
+                  <li>Ajax</li>
+                  <li>etc</li>
+                </ul>
+              </div>
+
+              <div class="col-sm-4">
+                <h3><span class="glyphicon glyphicon-education"></span> Education</h3>
+                <ul id="Education" class="bulleted">
+                  <li>Bachelor's of Fine Art</li>
+                  <li>Code Louisville Graduate</li>
+                  <li>etc</li>
+                  <li>etc</li>
+                </ul>
+            </div>
+          </div>
+          <a href="#top" class="lightlinks floatright"><span class="glyphicon glyphicon-chevron-up"></span> Top</a>
+        </div>
+      </section>
+
+        <!--   Contact -->
+      <section id="contact" class="contact restrict-width">
+        <div class="row">
+          <h2>Contact Me</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed mi hendrerit, ullamcorper leo quis, tempor turpis. Donec congue ligula massa, et consectetur enim accumsan non. Fusce fringilla justo nunc, eget rutrum libero</p>
+
+        <div class="col-sm-8">
             <form action="index.html" method="post">
               <label for="name">Name:</label>
               <input type="text" id="name" name="sender_name">
-
               <label for="email">Email:</label>
               <input type="email" id="mail" name="sender_email">
-
               <label for="message">Your Message:</label>
               <textarea id="message" name="sender_message"></textarea>
-
-                <button type="submit">Send</button>
-
+              <button type="submit">Send</button>
             </form>
-        </section>
-
-
-      </div>
+          </div>
+          <div class="col-sm-4 hidden-xs">
+            <img src="img/profile.jpg" class="img-rounding">
+          </div>
+        <a href="#top" class="floatright"><span class="glyphicon glyphicon-chevron-up"></span> Top</a>
+      </section>
 
       <footer>
         <div class="restrict-width">
@@ -155,8 +173,8 @@
       </footer>
     </div>
 
-
-
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript">
     	jQuery(function($){
         	     $( '.menu-btn' ).click(function(){

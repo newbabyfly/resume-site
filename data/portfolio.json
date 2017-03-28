@@ -3,23 +3,68 @@
     {
       "name": "Corn Island Archaeology",
       "image": "cia-logo.jpg",
-      "path": "portfolio/logo/",
+      "path": "portfolio",
     },
     {
       "name": "Blue Pheonix Properties",
       "image": "bpheonix-logo.jpg",
-      "path": "portfolio/logo/",
+      "path": "portfolio",
     },
 
     {
       "name": "Shirley's Girls",
       "image": "shirleysgirls-logo.jpg",
-      "path": "portfolio/logo/",
+      "path": "portfolio",
     },
     {
       "name": "Archaeology Day",
       "image": "archday-logo.jpg",
-      "path": "portfolio/logo/",
+      "path": "portfolio",
+    }
+
+  ],
+
+  "Websites": [
+    {
+      "name": "Corn Island Archaeology",
+      "image": "cia-website.jpg",
+      "path": "portfolio",
     },
-  ]
-},
+    {
+      "name": "Schism",
+      "image": "schism-web.jpg",
+      "path": "portfolio",
+    },
+
+    {
+      "name": "Falls of the Ohio Archaeological Society",
+      "image": "foas-website.jpg",
+      "path": "portfolio",
+    }
+  ],
+
+  "Print": [
+    {
+      "name": "Kentucky Archaeology Month",
+      "image": "KY-Archmonth.jpg",
+      "path": "portfolio",
+    },
+    {
+      "name": "Rosie the Archaeologist Shirt",
+      "image": "rosie-shirt.jpg",
+      "path": "portfolio",
+    },
+
+    {
+      "name": "Corn Island Banner",
+      "image": "cia-vert-banner.jpg",
+      "path": "portfolio",
+    },
+    {
+      "name": "The Potter's Song Cover",
+      "image": "Potters-cover.jpg",
+      "path": "portfolio",
+    }
+
+  ],\
+}
