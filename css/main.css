@@ -10,7 +10,6 @@
 /*----------- Global Styles---------------*/
 
 body {
-
 	color:#000000;
 	background: #caced1;
 	}
@@ -26,6 +25,11 @@ body {
 
 .smll-txt {
 	font-size: .75em;
+}
+
+.circle-bg {
+	background: url("../img/circle-bg.png") no-repeat right center;
+	background-size:75%;
 }
 
 
@@ -49,6 +53,11 @@ a {
 }
 
 a:hover {
+	color: #c50730;
+	text-decoration:none;
+	}
+
+a:active {
 	color: #c50730;
 	text-decoration:none;
 }
@@ -91,14 +100,6 @@ ul {
 	clear:both;
 }
 
-.flexbox {
-	/*revist flex lesson */
-	display: flex;
-	flex-wrap: wrap;
-	width:100%;
-	justify-content: space-between;
-
-}
 
 /*------------ Heading Styles -----------------*/
 
@@ -149,44 +150,66 @@ header a {
 	text-decoration: none;
 }
 
-.social-media {
-	padding:10px 0;
-	height: 50px;
-	width:100%;
-	text-align:right;
-	padding:10px;
-	z-index:0;
+.branding {
+	width:15%;
 }
 
 
-.social-links li {
-	width:30px;
-	height:40px;
-	display:inline;
-	float:right;
-	margin-right: 20px;
+/*------------------ content styles --------------*/
+
+.restrict-width {
+		margin:0 auto;
+		width:88%;
+		max-width: 1000px;
+		padding:50px 0;
+	}
+
+	.social-media {
+		padding:10px 0;
+		height: 50px;
+		width:100%;
+		text-align:right;
+		padding:10px;
+		z-index:0;
+	}
+
+
+	.social-links li {
+		width:30px;
+		height:40px;
+		display:inline;
+		float:right;
+		margin-right: 20px;
+	}
+
+	li.socialtag {
+		font-weight:bold;
+		font-size: 1.3rem;
+		width:100px;
+		height:35px;
+		margin-right:20px;
+		padding:10px;
+		background: #222;
+		color:#ccc;
+		border-radius:10px;
+		text-align:center;
+	}
+
+/*--------------------- Resume/Contact Styles ---------------------*/
+
+#resume {
+	background-color:#881630;
+	color:#fff;
+	padding: 20px 0 20px 0;
+	text-align:left;
 }
 
-li.socialtag {
-	font-weight:bold;
-	font-size: 1.3rem;
-	width:100px;
-	height:35px;
-	margin-right:20px;
-	padding:10px;
-	background: #222;
-	color:#ccc;
-	border-radius:10px;
-
+#contact {
+	background: url("../img/header-bg-gray.jpg") no-repeat;
+	background-size: cover;
+=
 }
 
-/*-------------- Main Nav ------------*/
-
-#mainnav {
-	background: rgba(13, 35, 33, 0.6);
-	padding:10px 0;
-
-}
 
 
 /*--------------------- Portfolio ---------------------*/
@@ -248,7 +271,7 @@ li.socialtag {
 }
 
 #print {
-	background-image: url("../portfolio/rosie-shirt.jpg");
+	background-image: url("../portfolio/Potters-cover.jpg");
 	background-size: cover;
 	background-position: center;
 	height:400px;
@@ -256,47 +279,26 @@ li.socialtag {
 
 /*----------------- Portfolio Gallery -----------------*/
 
-.gallery li {
+ .gallery li {
 	width:25%;
-	height:120px;
 	padding:10px;
 	display:inline;
 	float:left;
 	margin:0 0 20px 0;
+	min-width: 120px;
 }
 
 .gallery li img {
 	border-radius: 10%;
 	width:100%;
 	height:120px;
-
 }
 
-.cover {
+ .cover {
   object-fit: cover;
-  width: 50px;
-  height: 100px;
+	width:50%;
+  max-height: 100%;
 }
-
-.gallery {
-	display:inline-block;
-}
-
-
-
-
-/*--------------------- Resume Styles ---------------------*/
-
-#resume {
-	background-color:#881630;
-	color:#fff;
-	padding: 20px 0 20px 0;
-	text-align:left;
-}
-
-
-
-
 
 
 
@@ -318,6 +320,7 @@ input, textarea {
 	border:1px solid #ccc;
 	margin:10px 0 10px 0;
 	border-radius: 10px;
+	color:#111;
 }
 
 button {
@@ -326,6 +329,7 @@ button {
 	border:1px solid #ccc;
 	margin:10px 0 10px 0;
 	border-radius: 10px;
+	color:#111;
 }
 
 /*----------------- Lightbox --------------------------------*/
@@ -348,17 +352,32 @@ button {
 
 #overlay p { color:#fff;}
 
+/*------------- Portfolio Page Styling ------------*/
+
+.subpage .intro {
+	text-align:left;
+	padding:0 0 10px 30px;
+}
+
+.subpage .content {
+	background: rgba(13, 35, 33, 1);
+	display:inline-block;
+	width:100%;
+	text-align:center;
+	padding-bottom: 80px;}
+
+.subpage footer {
+	background: #881630;
+}
+
+
+
+
 
 /*---------------- Mobile Styling ---------------------*/
 
 @media screen and (max-width: 480px) {
 
-.content {
-	}
-
-.restrict-width {
-	padding:4%;
-}
 
 header {
 	padding-bottom: 15px;
@@ -374,6 +393,7 @@ header {
 		z-index:99;
 		background: rgba(13, 35, 33, .9);
 	}
+
 
 	.menu-btn div {
   	position: absolute;
@@ -401,18 +421,29 @@ header {
   	display: none;
   }
 
+	.responsive-menu a {
+		display:block;
+		padding:3%;
+		width:100%;
+		text-align:center;
+	}
+
+	.responsive-menu a:hover {
+		background:#881630;
+		color:#fff;
+	}
+
   .expand {
   	display: block !important;
   }
 
 /*----- Extra Mobile Fixes -----------*/
-	.social-media {
-		display:none;
-	}
-
-		.col-1 {display: none;}
 
 		input, textarea, button {padding:2%;}
+
+		.subpage .content {
+			padding-bottom: 20px;
+		}
 }
 
 
@@ -435,7 +466,16 @@ header {
 		padding: 15px 5px 15px 5px;
 	}
 
-		.col-1 {display: none;}
+		.subpage .responsive-menu {
+			position: absolute;
+			top:0;
+			right:0;
+			width:100%;
+			height: 45px;
+			text-align:right;
+			background: rgba(13, 35, 33, 1);
+			padding-right:30px;
+		}
 
 }
 
@@ -444,10 +484,9 @@ header {
 
 @media screen and (min-width: 760px) {
 
-	header {
-		padding:75px 0 35px 0;
-	}
-
+.intro {
+	padding:20px 0 50px 0;
+}
 
 	.mobile-nav li {
 		display:inline-block;
@@ -456,42 +495,13 @@ header {
 		padding: 10px;
 	}
 
-	.content {
-
-	}
-
-	.restrict-width {
-		display:block;
-		width:88%;
-		max-width: 1000px;
-		margin: auto;
-		padding:50px 0;
-	}
-
-/* ------ About Me ---------*/
 
 
+/* ------ Portfolio Full Sized Style ---------*/
 
-	.col-1 {
-		display:inline-block;
-		float:left;
-		width:28%;
-		margin-right:40px;
-
-	}
-
-	/*------------- SubPage header Style ------------*/
-
- .subpage header {
-	 height:200px;
-	}
-
-	.subpage .content {
-		background: rgba(13, 35, 33, 1)
-	}
-
-	.subpage footer {
-		background: #881630;
+	.subpage header {
+		height:250px;
+		padding-top: 20px;
 	}
 
 	.subpage .responsive-menu {
@@ -501,7 +511,11 @@ header {
 		width:100%;
 		height: 45px;
 		text-align:right;
-		background: rgba(13, 35, 33, 1)
+		font-size: 1.3rem;
+		background: rgba(13, 35, 33, 1);
+		padding-right:50px;
 	}
+
+
 
 }
